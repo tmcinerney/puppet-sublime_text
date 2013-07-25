@@ -8,10 +8,13 @@
 #   sublime_text::package { 'Emmet':
 #     source => 'sergeche/emmet-sublime'
 #   }
-define sublime_text_3::package($source) {
+define sublime_text_3::package($source, $branch = '') {
   require sublime_text_3::config
 
+  $extra = "-b ${branch}" unless $branch.empty?
+
   repository { "${sublime_text_3::config::packagedir}/${name}":
-    source => $source
+    source => $source,
+    extra  => $extra
   }
 }
