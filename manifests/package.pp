@@ -11,7 +11,9 @@
 define sublime_text_3::package($source, $branch = '') {
   require sublime_text_3::config
 
-  $extra = "-b ${branch}" unless $branch.empty?
+  unless $branch.empty? {
+    $extra = "-b ${branch}"
+  }
 
   repository { "${sublime_text_3::config::packagedir}/${name}":
     source => $source,
