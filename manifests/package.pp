@@ -11,7 +11,7 @@
 define sublime_text_3::package($source, $branch = '') {
   require sublime_text_3::config
 
-  unless $branch.empty? {
+  unless $branch == '' {
     $extra = "-b ${branch}"
   }
 
