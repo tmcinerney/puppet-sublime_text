@@ -4,7 +4,7 @@
 
 Install [Sublime Text](http://www.sublimetext.com//), a text-editor/IDE for Mac
 
-Current Version: 3 Beta (Build 3033)
+Current Version: 3 Beta (Build 3047)
 ## Usage
 
 ```puppet
