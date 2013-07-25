@@ -2,8 +2,8 @@
 #
 # Examples
 #
-#   include sublime_text::config
-class sublime_text::config {
+#   include sublime_text_3::config
+class sublime_text_3::config {
   $dir        = "/Users/${::luser}/Library/Application Support/Sublime Text 3"
   $packagedir = "${dir}/Packages"
 

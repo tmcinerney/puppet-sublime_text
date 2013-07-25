@@ -8,8 +8,8 @@ Current Version: 3 Beta (Build 3047)
 ## Usage
 
 ```puppet
-include sublime_text
-sublime_text::package { 'Emmet':
+include sublime_text_3
+sublime_text_3::package { 'Emmet':
   source => 'sergeche/emmet-sublime'
 }
 ```
